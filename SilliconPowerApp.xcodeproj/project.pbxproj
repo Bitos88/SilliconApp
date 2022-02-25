@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		1A68452527C7BA8B00D50137 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68452427C7BA8B00D50137 /* AppDelegate.swift */; };
 		1A68452727C7BA8B00D50137 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68452627C7BA8B00D50137 /* SceneDelegate.swift */; };
-		1A68452927C7BA8B00D50137 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68452827C7BA8B00D50137 /* ViewController.swift */; };
-		1A68452C27C7BA8B00D50137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A68452A27C7BA8B00D50137 /* Main.storyboard */; };
 		1A68452E27C7BA8D00D50137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A68452D27C7BA8D00D50137 /* Assets.xcassets */; };
 		1A68453127C7BA8D00D50137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A68452F27C7BA8D00D50137 /* LaunchScreen.storyboard */; };
+		1A68453C27C7BC6E00D50137 /* TvShowsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68453B27C7BC6E00D50137 /* TvShowsListViewController.swift */; };
+		1A68454027C7BC8C00D50137 /* TvShowsListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A68453F27C7BC8C00D50137 /* TvShowsListViewController.storyboard */; };
+		1A68454227C7BF1600D50137 /* TvShowsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A68454127C7BF1600D50137 /* TvShowsListCell.xib */; };
+		1A68454427C7BF4F00D50137 /* TvShowsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68454327C7BF4F00D50137 /* TvShowsCollectionViewCell.swift */; };
+		1A68454727C7C21B00D50137 /* TvShowsListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68454627C7C21B00D50137 /* TvShowsListModel.swift */; };
+		1A68454A27C7C48900D50137 /* TheMovieDBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A68454927C7C48900D50137 /* TheMovieDBAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A68452127C7BA8B00D50137 /* SilliconPowerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SilliconPowerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A68452427C7BA8B00D50137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A68452627C7BA8B00D50137 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1A68452827C7BA8B00D50137 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1A68452B27C7BA8B00D50137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A68452D27C7BA8D00D50137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A68453027C7BA8D00D50137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A68453227C7BA8D00D50137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A68453B27C7BC6E00D50137 /* TvShowsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListViewController.swift; sourceTree = "<group>"; };
+		1A68453F27C7BC8C00D50137 /* TvShowsListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TvShowsListViewController.storyboard; sourceTree = "<group>"; };
+		1A68454127C7BF1600D50137 /* TvShowsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TvShowsListCell.xib; sourceTree = "<group>"; };
+		1A68454327C7BF4F00D50137 /* TvShowsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A68454627C7C21B00D50137 /* TvShowsListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowsListModel.swift; sourceTree = "<group>"; };
+		1A68454927C7C48900D50137 /* TheMovieDBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheMovieDBAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,75 @@
 		1A68452327C7BA8B00D50137 /* SilliconPowerApp */ = {
 			isa = PBXGroup;
 			children = (
-				1A68452427C7BA8B00D50137 /* AppDelegate.swift */,
-				1A68452627C7BA8B00D50137 /* SceneDelegate.swift */,
-				1A68452827C7BA8B00D50137 /* ViewController.swift */,
-				1A68452A27C7BA8B00D50137 /* Main.storyboard */,
+				1A68453927C7BC3000D50137 /* Screens */,
+				1A68453827C7BC0300D50137 /* Application */,
 				1A68452D27C7BA8D00D50137 /* Assets.xcassets */,
 				1A68452F27C7BA8D00D50137 /* LaunchScreen.storyboard */,
 				1A68453227C7BA8D00D50137 /* Info.plist */,
 			);
 			path = SilliconPowerApp;
+			sourceTree = "<group>";
+		};
+		1A68453827C7BC0300D50137 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1A68452627C7BA8B00D50137 /* SceneDelegate.swift */,
+				1A68452427C7BA8B00D50137 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1A68453927C7BC3000D50137 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1A68453A27C7BC3400D50137 /* TvShowsList */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1A68453A27C7BC3400D50137 /* TvShowsList */ = {
+			isa = PBXGroup;
+			children = (
+				1A68454827C7C47E00D50137 /* NetWorking */,
+				1A68454527C7C20E00D50137 /* Model */,
+				1A68453E27C7BC7800D50137 /* View */,
+				1A68453D27C7BC7200D50137 /* ViewController */,
+			);
+			path = TvShowsList;
+			sourceTree = "<group>";
+		};
+		1A68453D27C7BC7200D50137 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1A68454327C7BF4F00D50137 /* TvShowsCollectionViewCell.swift */,
+				1A68453B27C7BC6E00D50137 /* TvShowsListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1A68453E27C7BC7800D50137 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1A68453F27C7BC8C00D50137 /* TvShowsListViewController.storyboard */,
+				1A68454127C7BF1600D50137 /* TvShowsListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1A68454527C7C20E00D50137 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A68454627C7C21B00D50137 /* TvShowsListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1A68454827C7C47E00D50137 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+				1A68454927C7C48900D50137 /* TheMovieDBAPI.swift */,
+			);
+			path = NetWorking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +194,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A68453127C7BA8D00D50137 /* LaunchScreen.storyboard in Resources */,
+				1A68454027C7BC8C00D50137 /* TvShowsListViewController.storyboard in Resources */,
+				1A68454227C7BF1600D50137 /* TvShowsListCell.xib in Resources */,
 				1A68452E27C7BA8D00D50137 /* Assets.xcassets in Resources */,
-				1A68452C27C7BA8B00D50137 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +207,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A68452927C7BA8B00D50137 /* ViewController.swift in Sources */,
 				1A68452527C7BA8B00D50137 /* AppDelegate.swift in Sources */,
 				1A68452727C7BA8B00D50137 /* SceneDelegate.swift in Sources */,
+				1A68453C27C7BC6E00D50137 /* TvShowsListViewController.swift in Sources */,
+				1A68454A27C7C48900D50137 /* TheMovieDBAPI.swift in Sources */,
+				1A68454427C7BF4F00D50137 /* TvShowsCollectionViewCell.swift in Sources */,
+				1A68454727C7C21B00D50137 /* TvShowsListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1A68452A27C7BA8B00D50137 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A68452B27C7BA8B00D50137 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1A68452F27C7BA8D00D50137 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +358,6 @@
 				INFOPLIST_FILE = SilliconPowerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +385,6 @@
 				INFOPLIST_FILE = SilliconPowerApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
