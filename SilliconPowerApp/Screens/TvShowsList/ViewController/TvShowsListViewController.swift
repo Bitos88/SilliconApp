@@ -86,6 +86,8 @@ extension TvShowsListViewController: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? TvShowsCollectionViewCell else {fatalError()}
         
         cell.collectionLabel.text = tvShows[indexPath.row].originalName
+        cell.collectionImage.setPlaceHolder(placeHolderImg: "IT")
+        cell.collectionImage.load(urlString: tvShows[indexPath.row].posterPath ?? "IT")
         
         return cell
         
@@ -94,7 +96,19 @@ extension TvShowsListViewController: UICollectionViewDataSource {
 
 extension TvShowsListViewController: UICollectionViewDelegate {
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "TvShowDetailViewController", bundle: nil)
+        
+        guard let TvShowDetailViewController = storyboard.instantiateViewController(withIdentifier: "TvShowDetailViewController") as? TvShowDetailViewController else {return}
+        
+        TvShowDetailViewController.tvShow = tvShows[indexPath.row]
+        
+        self.navigationController?.pushViewController(TvShowDetailViewController, animated: true)
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+    }
 }
 
 extension TvShowsListViewController {
