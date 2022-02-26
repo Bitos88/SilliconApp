@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pP-5r-ngj">
-                        <rect key="frame" x="0.0" y="264" width="204" height="21"/>
+                        <rect key="frame" x="0.0" y="258" width="204" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Y7J-HO-R49"/>
                         </constraints>
@@ -39,7 +39,7 @@
                     <constraint firstAttribute="trailing" secondItem="T2S-v2-GZC" secondAttribute="trailing" id="WgK-Eo-q9y"/>
                     <constraint firstItem="T2S-v2-GZC" firstAttribute="top" secondItem="cq5-3w-N0M" secondAttribute="top" id="Ynq-Ds-9Ea"/>
                     <constraint firstAttribute="trailing" secondItem="2pP-5r-ngj" secondAttribute="trailing" id="dOi-1C-RNN"/>
-                    <constraint firstItem="2pP-5r-ngj" firstAttribute="top" secondItem="T2S-v2-GZC" secondAttribute="bottom" constant="14" id="e9x-6F-BVL"/>
+                    <constraint firstItem="2pP-5r-ngj" firstAttribute="top" secondItem="T2S-v2-GZC" secondAttribute="bottom" constant="8" id="e9x-6F-BVL"/>
                     <constraint firstItem="T2S-v2-GZC" firstAttribute="leading" secondItem="cq5-3w-N0M" secondAttribute="leading" id="jMf-Di-eec"/>
                 </constraints>
             </collectionViewCellContentView>

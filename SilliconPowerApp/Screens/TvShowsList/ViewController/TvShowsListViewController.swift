@@ -15,6 +15,8 @@ class TvShowsListViewController: UIViewController {
     
     var theMovieDBAPI = TheMovieDBAPI()
     
+    var isWaiting = false
+    
     
     private var layout: UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
@@ -87,7 +89,7 @@ extension TvShowsListViewController: UICollectionViewDataSource {
         
         cell.collectionLabel.text = tvShows[indexPath.row].originalName
         cell.collectionImage.setPlaceHolder(placeHolderImg: "IT")
-        cell.collectionImage.load(urlString: tvShows[indexPath.row].posterPath ?? "IT")
+        cell.collectionImage.load(urlString: "https://image.tmdb.org/t/p/w500\(tvShows[indexPath.row].posterPath ?? "")")
         
         return cell
         
@@ -119,6 +121,9 @@ extension TvShowsListViewController {
                 self.tvShows.append(tvShow)
             }
             DispatchQueue.main.async {
+                
+                self.collectionView.dataSource = nil
+                self.collectionView.dataSource = self
                 completion?()
             }
         }
